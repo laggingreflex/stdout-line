@@ -1,0 +1,14 @@
+{
+  "name": "stdout-line",
+  "version": "0.0.0",
+  "description": "Log by overwriting previous output",
+  "main": "index.js",
+  "type": "module",
+  "repository": "laggingreflex/stdout-line",
+  "keywords": [
+    "line",
+    "log",
+    "stdout",
+    "update"
+  ]
+}
