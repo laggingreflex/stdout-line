@@ -20,9 +20,14 @@ npm install stdout-line
 ## Usage
 
 ```js
-import stdoutLine from 'stdout-line'
-stdoutLine('... your message')
+import line from 'stdout-line'
+line('this will get replaced by')
+line('next line')
 ```
+```js
+line.persist('unless persisted')
+```
+
 
 ## API
 
@@ -33,6 +38,7 @@ create(opts)
 
 * **`opts.stream`** `[=process.stdout]` Stream to write to
 * **`opts.width`** `[number=stream.columns|80]` Width
-* **`opts.pad`** `[string= ]` Pad message if length < width
 * **`opts.join`** `[string= ]` Join [...message] array with
+* **`opts.throttle`** `[number]` Throttle logging (ms)
+* **`opts.format`** `[function]` Format message before writing to `stream`
 
